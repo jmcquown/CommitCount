@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/jmcquown/CommitCount/application"
+	"github.com/jmcquown/bootstrap_example/application"
 )
 
 func newConfig() (*viper.Viper, error) {
 	c := viper.New()
-	c.SetDefault("cookie_secret", "QPJrR3qWtZjHrXQf")
+	c.SetDefault("cookie_secret", "mU9ra3OcBjUKNTsm")
 	c.SetDefault("http_addr", ":8888")
 	c.SetDefault("http_cert_file", "")
 	c.SetDefault("http_key_file", "")
@@ -66,4 +66,6 @@ func main() {
 	if err != nil {
 		logrus.Fatal(err)
 	}
+
+	
 }
